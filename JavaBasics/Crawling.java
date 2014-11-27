@@ -33,14 +33,14 @@ public class Crawling {
 		// Task 3)
 		System.out.println("Vuvedete niz:");
 		String Symbols = id.readLine();
-		int i=0;
-		//String target_symbol = Character.toString(Symbols.charAt(i));
+		int i=0, count=0;
 		while (i<Symbols.length()) {
-			if (Symbols.charAt(i) == 1) {
-				System.out.println("ok");
+			if (Symbols.charAt(i) == '1') {
+				count += 1;
 			}
 			i++;
 		}
+		System.out.println("How many times the symbol 1 appears: " + count);
 		
 	}
 }
